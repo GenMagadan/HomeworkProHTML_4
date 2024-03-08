@@ -97,10 +97,10 @@
             <div class="product-card_descriptions">
               <p class="name-cardProduct">Mango People T-shirt</p>
               <div class="color-cardProduct">
-                Color: <span>Red</span>
+                Color:<span>Red</span>
               </div>
               <div class="size-cardProduct">
-                Size: <span>XXL</span>
+                Size:<span>XXL</span>
               </div>
             </div>
           </div>
@@ -140,10 +140,10 @@
             <div class="product-card_descriptions">
               <p class="name-cardProduct">Mango People T-shirt</p>
               <div class="color-cardProduct">
-                Color: <span>Red</span>
+                Color:<span>Red</span>
               </div>
               <div class="size-cardProduct">
-                Size: <span>XXL</span>
+                Size:<span>XXL</span>
               </div>
             </div>
           </div>
@@ -183,10 +183,10 @@
             <div class="product-card_descriptions">
               <p class="name-cardProduct">Mango People T-shirt</p>
               <div class="color-cardProduct">
-                Color: <span>Red</span>
+                Color:<span>Red</span>
               </div>
               <div class="size-cardProduct">
-                Size: <span>XXL</span>
+                Size:<span>XXL</span>
               </div>
             </div>
           </div>
@@ -223,29 +223,47 @@
         </div>
         <div class="button-chopping end-chopp">CONTINUE sHOPPING</div>
       </section>
+
       <section class="making-purchases">
-        <h3 class="shipping-adress">Shipping Adress</h3>
-        <select class="sity-select">
-          <option value="bangladesh">Bangladesh</option>
-          <option value="russia">Russia</option>
-          <option value="china">China</option>
-          <option value="peru">Peru</option>
-        </select>
-        <input type="text" placeholder="State" />
-        <input type="text" placeholder="Postcode / Zip" />
-      </section>
-      <section class="coupon">
-        <h3 class="coupon-discount">coupon discount</h3>
-        <p class="coupon-text">
-          Enter your coupon code if you have one
-        </p>
-        <input type="text" placeholder="State" />
-        <div class="coupon-button">Apply coupon</div>
-      </section>
-      <section class="payment">
-        <p class="sub-total">Sub total<span>$900</span></p>
-        <h3 class="grand-total">GRAND TOTAL<span>$900</span></h3>
-        <div class="payment-button">proceed to checkout</div>
+        <section class="delivery-address">
+          <h3 class="shipping-adress">Shipping Adress</h3>
+          <select class="sity-select">
+            <option value="bangladesh">Bangladesh</option>
+            <option value="russia">Russia</option>
+            <option value="china">China</option>
+            <option value="peru">Peru</option>
+          </select>
+          <input
+            class="making-input state-input"
+            type="text"
+            placeholder="State"
+          />
+          <input
+            class="making-input postcode-input"
+            type="number"
+            min="1"
+            placeholder="Postcode / Zip"
+          />
+          <div class="making-button button-address">get a quote</div>
+        </section>
+        <section class="coupon">
+          <h3 class="coupon-discount">coupon discount</h3>
+          <p class="coupon-text">
+            Enter your coupon code if you have one
+          </p>
+          <input
+            class="making-input coupon-input"
+            type="text"
+            placeholder="State"
+          />
+          <div class="making-button button-coupon">Apply coupon</div>
+        </section>
+        <section class="payment">
+          <p class="sub-total">Sub total <span>$900</span></p>
+          <h3 class="grand-total">GRAND TOTAL <span>$900</span></h3>
+          <div class="line"></div>
+          <div class="payment-button">proceed to checkout</div>
+        </section>
       </section>
     </section>
     <section class="section-subscribe">
