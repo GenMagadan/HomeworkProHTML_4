@@ -17,3 +17,121 @@ body {
   margin: auto;
   background-color: gray;
 }
+.circle-xmark {
+  width: 16px;
+}
+.section-center {
+  background-color: $colorFonOne;
+}
+.products-details {
+  padding: 67px 230px 44px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  &__name {
+    display: grid;
+    grid-template-columns: 500px repeat(4, 1fr) 0.4fr;
+    border-bottom: 1px solid #eaeaea;
+    .name-option {
+      @include centerFlex;
+      font-family: Lato;
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -0.015em;
+      color: #222222;
+      padding-block: 20px;
+    }
+    .name-option:first-child {
+      display: flex;
+      justify-content: start;
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 500px repeat(4, 1fr) 0.4fr;
+    padding-block: 22px 25px;
+    border-bottom: 1px solid #eaeaea;
+    .product-card {
+      display: flex;
+      gap: 21px;
+      .product-card-img {
+        width: 100px;
+        height: 115px;
+      }
+      &_descriptions {
+        display: flex;
+        flex-direction: column;
+        padding-top: 13px;
+        .name-cardProduct {
+          font-family: Lato;
+          font-size: 13px;
+          line-height: 1.2;
+          font-weight: 400;
+          text-transform: uppercase;
+          color: #222222;
+          padding-bottom: 38px;
+        }
+        .color-cardProduct,
+        .size-cardProduct {
+          font-family: Lato;
+          font-size: 13px;
+          line-height: 18px;
+          font-weight: 400;
+          color: #575757;
+          span {
+            font-weight: 300;
+            color: #6f6e6e;
+          }
+        }
+      }
+    }
+    .card-option {
+      @include centerFlex;
+      font-family: Lato;
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #656565;
+      .quant {
+        width: 54px;
+        height: 30px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        text-align: center;
+      }
+      .circle-xmark {
+        filter: brightness(0) saturate(100%) invert(86%) sepia(8%)
+          saturate(24%) hue-rotate(314deg) brightness(91%)
+          contrast(85%);
+      }
+    }
+  }
+}
+
+.options-shopping {
+  padding-inline: 230px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .button-chopping {
+    width: 235px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    @include centerFlex;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    &:hover {
+      color: $colorContentFive;
+      background-color: $colorContentEight;
+      cursor: pointer;
+    }
+  }
+}

@@ -461,4 +461,130 @@ body {
   width: 1600px;
   margin: auto;
   background-color: gray;
+}
+
+.circle-xmark {
+  width: 16px;
+}
+
+.section-center {
+  background-color: #ffffff;
+}
+
+.products-details {
+  padding: 67px 230px 44px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.products-details__name {
+  display: grid;
+  grid-template-columns: 500px repeat(4, 1fr) 0.4fr;
+  border-bottom: 1px solid #eaeaea;
+}
+.products-details__name .name-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  color: #222222;
+  padding-block: 20px;
+}
+.products-details__name .name-option:first-child {
+  display: flex;
+  justify-content: start;
+}
+.products-details__content {
+  display: grid;
+  grid-template-columns: 500px repeat(4, 1fr) 0.4fr;
+  padding-block: 22px 25px;
+  border-bottom: 1px solid #eaeaea;
+}
+.products-details__content .product-card {
+  display: flex;
+  gap: 21px;
+}
+.products-details__content .product-card .product-card-img {
+  width: 100px;
+  height: 115px;
+}
+.products-details__content .product-card_descriptions {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+}
+.products-details__content .product-card_descriptions .name-cardProduct {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+  padding-bottom: 38px;
+}
+.products-details__content .product-card_descriptions .color-cardProduct,
+.products-details__content .product-card_descriptions .size-cardProduct {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #575757;
+}
+.products-details__content .product-card_descriptions .color-cardProduct span,
+.products-details__content .product-card_descriptions .size-cardProduct span {
+  font-weight: 300;
+  color: #6f6e6e;
+}
+.products-details__content .card-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #656565;
+}
+.products-details__content .card-option .quant {
+  width: 54px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+.products-details__content .card-option .circle-xmark {
+  filter: brightness(0) saturate(100%) invert(86%) sepia(8%) saturate(24%) hue-rotate(314deg) brightness(91%) contrast(85%);
+}
+
+.options-shopping {
+  padding-inline: 230px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.options-shopping .button-chopping {
+  width: 235px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
+.options-shopping .button-chopping:hover {
+  color: #fbfbfb;
+  background-color: #ef5b70;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
