@@ -1,0 +1,19 @@
+@import 'SCSS/mixins';
+@import 'SCSS/colors';
+@import 'SCSS/fonts';
+@import 'SCSS/header';
+@import 'SCSS/section-top';
+@import 'SCSS/sectionSubscribe';
+@import 'SCSS/section-info';
+@import 'SCSS/footer';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1600px;
+  margin: auto;
+  background-color: gray;
+}
